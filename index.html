@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZapBot - Automatize suas vendas no WhatsApp</title>
+  <link rel="icon" href="https://yago7386.github.io/zapbot-001/favicon.ico">
+  <meta name="description" content="Venda no automático com um robô de WhatsApp que responde seus clientes, envia links de pagamento, coleta leads e muito mais.">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f172a, #14532d, #10b981, #2dd4bf);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      background: rgba(17, 24, 39, 0.95);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 900;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.4rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+    .cta {
+      margin-top: 1.5rem;
+    }
+    .cta a {
+      background: #10b981;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+    .cta a:hover {
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 2.5rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+    .section p, .benefit p, .plan ul, .plan h3 {
+      color: #e0fdf4;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .benefit {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.8rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    }
+    .benefit h3 {
+      margin-top: 0;
+      color: #34d399;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .plan-section {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2.5rem 1rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+    }
+    .plan {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 1.8rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    }
+    .plan h3 {
+      margin: 0 0 0.8rem 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .plan ul {
+      padding-left: 1.5rem;
+    }
+    .plan a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #10b981;
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+    .plan a:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: rgba(17, 24, 39, 0.95);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1.1rem;
+      }
+      .section h2 {
+        font-size: 1.8rem;
+      }
+      .plan h3, .benefit h3 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZapBot</h1>
+    <p>Automatize suas vendas no WhatsApp 24/7 com inteligência artificial.</p>
+    <div class="cta">
+      <a href="#planos">Ver Planos</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>O que é o ZapBot?</h2>
+    <p>ZapBot é uma automação inteligente para WhatsApp que responde seus clientes, envia links de pagamento, captura leads e vende no automático. Ideal para afiliados, infoprodutores e pequenos negócios que querem escalar.</p>
+  </section>
+
+  <section class="section">
+    <h2>Por que usar o ZapBot?</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <h3>💰 Venda no piloto automático</h3>
+        <p>Atenda clientes 24h por dia sem estar online. O bot fecha vendas pra você enquanto dorme.</p>
+      </div>
+      <div class="benefit">
+        <h3>⚡ Respostas rápidas</h3>
+        <p>Velocidade de resposta aumenta conversões. Nunca mais perca uma venda por demora no atendimento.</p>
+      </div>
+      <div class="benefit">
+        <h3>📊 Funis e gatilhos inteligentes</h3>
+        <p>Crie sequências automáticas com base no comportamento do usuário. Tudo integrado ao seu funil de vendas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section plan-section" id="planos">
+    <h2>Escolha seu plano</h2>
+
+    <div class="plan">
+      <h3>Plano Essencial - R$ 99,00</h3>
+      <ul>
+        <li>Atendimento automatizado 24/7</li>
+        <li>Envio de links de pagamento</li>
+        <li>Coleta de leads</li>
+        <li>Resposta automática com IA</li>
+      </ul>
+      <a href="https://pay.kirvano.com/782eb320-b97f-4a54-a7c4-85cd62c905b6?aff=cf623383-812a-4672-81c1-d4e45aa0f83e" target="_blank">Assinar Plano Essencial</a>
+    </div>
+
+    <div class="plan">
+      <h3>Plano Profissional - R$ 149,00</h3>
+      <ul>
+        <li>Todas as funções do Plano Essencial</li>
+        <li>Integração com CRM e funis avançados</li>
+        <li>Mensagens personalizadas e segmentadas</li>
+        <li>Relatórios detalhados de performance</li>
+        <li>Suporte prioritário</li>
+      </ul>
+      <a href="https://pay.kirvano.com/4397e9a1-27ff-4478-9549-e52369df8be1?aff=cf623383-812a-4672-81c1-d4e45aa0f83e" target="_blank">Assinar Plano Profissional</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 ZapBot - Todos os direitos reservados
+  </footer>
+</body>
+</html>
